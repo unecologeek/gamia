@@ -1,7 +1,7 @@
 // This file initializes the Three.js scene, camera, and renderer, and integrates the Globe and Game modules.
 
 import * as THREE from 'three';
-import Globe from './js/globe.js'; // Updated path
+import Globe from './js/globe/globe.js'; // Updated path
 import Game from './js/game.js';  // Updated path
 
 let scene, camera, renderer, globe, game;
@@ -17,7 +17,7 @@ function initThreeJS() {
     // Set up the renderer
     renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
+    document.getElementById('globe-container').appendChild(renderer.domElement);
 
     // Add lighting
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
