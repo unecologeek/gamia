@@ -1,8 +1,8 @@
 // This file initializes the Three.js scene, camera, and renderer, and integrates the Globe and Game modules.
 
 import * as THREE from 'three';
-import Globe from './js/globe/Globe.js'; // Updated path
-import Game from './js/game.js';  // Updated path
+import Globe from './js/Globe/Globe.js';
+import Game from './js/Game.js';
 
 let scene, camera, renderer, globe, game;
 
@@ -45,11 +45,11 @@ function animate() {
     renderer.render(scene, camera);
 }
 
-function initGame() {
+function init() {
     const container = document.getElementById('globe-container');
 
     // Initialize the Globe
-    globe = new Globe(container, scene, camera, renderer);
+    globe = new Globe(container);
     globe.loadCountries().then(() => {
         // Initialize the Game once the globe is ready
         game = new Game(globe);
@@ -59,6 +59,4 @@ function initGame() {
     });
 }
 
-// Initialize Three.js and the game
-initThreeJS();
-initGame();
+document.addEventListener('DOMContentLoaded', init);
