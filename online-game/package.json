@@ -1,0 +1,17 @@
+{
+  "name": "online-game",
+  "version": "1.0.0",
+  "description": "An online game built with Three.js, HTML, and JavaScript.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "dependencies": {
+    "three": "^0.152.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "author": "",
+  "license": "MIT"
+}
