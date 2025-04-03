@@ -1,9 +1,9 @@
-import Map3DGeometry from './Map3DGeometry.js';
-import LargeCountryGeometry from './LargeCountryGeometry.js';
-import DateLineCrossingGeometry from './DateLineCrossingGeometry.js';
-import GlobeControls from './GlobeControls.js';
-import CountryManager from './CountryManager.js';
-import GlobeRenderer from './GlobeRenderer.js';
+import Map3DGeometry from 'Map3DGeometry.js';
+import LargeCountryGeometry from 'LargeCountryGeometry.js';
+import DateLineCrossingGeometry from 'DateLineCrossingGeometry.js';
+import GlobeControls from 'GlobeControls.js';
+import CountryManager from 'CountryManager.js';
+import GlobeRenderer from 'GlobeRenderer.js';
 
 class Globe {
     constructor(container) {
