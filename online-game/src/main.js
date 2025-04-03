@@ -1,7 +1,7 @@
 // This file initializes the Three.js scene, camera, and renderer, and integrates the Globe and Game modules.
 
 import * as THREE from 'three';
-import Globe from './js/globe/globe.js'; // Updated path
+import Globe from './js/globe/Globe.js'; // Updated path
 import Game from './js/game.js';  // Updated path
 
 let scene, camera, renderer, globe, game;
